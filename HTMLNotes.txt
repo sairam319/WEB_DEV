@@ -1,0 +1,167 @@
+Hyper Links in HTML
+==================================
+
+1)Hyper links in HTML declared as below 
+
+<a href="https://youtu.be/AW-DeLroPmU"  target="_blank">WILL_ON_WHEELS FIRST VIDEO</a>
+       <!--target attribute in anchor target-->
+
+Here taget is one of the important attribute to take the user to next page.
+
+we have 
+    _self -- overrides the existing web page.
+    _blank -- web page opens up in new page
+    _parent -- Opens the linked document in the parent frame.
+    _top --Opens the Linked document in the full body of the window
+
+
+2)title -- titles are useful to undertand the viwer whats the purpose of the link ,using the title attribute user will get an idea about
+the page they are going to.
+
+<a href="https://youtu.be/AW-DeLroPmU"  target="_blank" title="YouTube">WILL_ON_WHEELS FIRST VIDEO</a></blockquote> 
+
+============================================================================================================================
+HTML LINKS -- HTML BOOKMARKING 
+=============================================================================================================================
+
+. HTML bookmarks helps readers to jump to specific parts of web page.
+. Booksmarks can be helpful if a webpage is verylong.
+.First create a bookmark with the id attibute.
+.<a href="#C4">jump to chapter 1</a>
+<h2 id ="C4">chapter 1</h2>
+============================================================================================================================
+HTML IMG
+=============================================================================================================================
+Images are defined with  img tag 
+
+. <img> -- this is the tag that is used for displaying the images .
+
+<img src ="here specify path for the image"/> -- as we don't have img ending tag , starting tag acts itself as both.
+
+. Height and width are additional attributes for img tag to adjust the height of img.
+
+<img src ="here specify path for the image" height="50" width="60"/>
+
+. We can also add these attributes in style attibute as below.
+
+<img src ="here specify path for the image" style="Height:50 ; width:50"/>
+
+. To give description about the image we have to add an attribute called as alt (alternative)
+
+<img src ="here specify path for the image" style="Height:50 ; width:50" alt=""/>
+
+============================================================================================================================
+HTML IMAGE MAP
+=============================================================================================================================
+
+Map is collection of area.
+
+The <Map> element is used to create an image map,and is linked to the image by using the name attibute.
+
+Syntax: 
+---------------
+
+<map name="workmap">
+
+<img src = "workplace.jpg" alt="workplace" usemap ="#workmap">
+
+
+
+<body>
+<img src="source of image" usemap="#endimage"/> //Here  we are declaring the image to use a map with ID as endimage
+<map name="endimage">
+<area shape="name the shape of the image" coords="topleftcorner-x,topleftcorner-y,bottomrightcorner-x,bottomrightcorner-y" 
+href="as per requirement"> //this is the syntax for any image that acts as buttom/clickable object.
+</map>
+</body>
+
+============================================================================================================================
+BACKGROUND IMAGES
+=============================================================================================================================
+
+Below is the syntx for setting background image
+<body style="background-image:url(image url);background-repeat:no-repeat;background-size:100% 100%">
+
+============================================================================================================================
+PICTURE ELEMENT
+=============================================================================================================================
+
+. The <PICTURE> element contains number of <source> elements ,each referring to different image sources.
+
+. This way the browser can choose the image that best fits the current view and/or device.
+
+.<picture>
+<source media="(min-width:xxxpx)" srcset="img">
+<source media="(min-width:xxxpx)" srcset="img2">
+<img src="img3">
+</picture>
+
+NOTE:
+-----
+
+. Always make <img> elementas last child element of <picture> element.
+
+. <img> element is used by browsers that do not support <picture>element, or if none of the <source> tags matched. 
+
+============================================================================================================================
+MARGIN , MAPING and BORDER
+=============================================================================================================================
+
+BORDER
+------
+
+<element style="border: xxpx StyleOfBorder ColorOfBorder ">
+
+<element style="border: 2px solid blue ">
+
+<th colspan="2">Address,phone number</th> //this colspan collapses two columns
+
+============================================================================================================================
+LISTS
+=============================================================================================================================
+
+There are two types of lists those are ordered list and unordered list.
+
+<html>
+<head>
+<title>List</title></head>
+<body>
+
+<ul type="">
+<li>balaram/li>
+<li>Rama</li>
+<li>krshniia</li></ul>
+
+<ol>
+<li>sita</li>
+<li>radha</li>
+</ol>
+</body>
+</html>
+
+<dl>//description list
+<dt>description title</dt>
+<dd>description data</dd>
+</dl>
+
+============================================================================================================================
+Block level  , Inline leve
+=============================================================================================================================
+
+Block level elements :-
+
+                      Block level elements always starts on new line and takes up the full width available.
+
+                      The <div> is the block level element
+
+============================================================================================================================
+ID attribute
+=============================================================================================================================
+
+. The id attibute specifies a unique id for an HTML element.
+
+. to select an element with specific id ,write a hash(#) character ,followed by the id of the element.
+
+Tip: The id attibute can be used  on any HTML element.
+Note: the id value is case-sensitive.
+Note: The id must contain at least one charcter and must not contain whitespaces(spaces,tabs)  

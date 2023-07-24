@@ -1,0 +1,60 @@
+
+.flexbox-container{
+     
+    display :flex;
+    width: 100%;
+    background-color: darkgray;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.flexbox-container-2{
+
+    display :flex;
+    width: 100%;
+    background-color :chocolate;
+    text-align: center;
+}
+
+.flexbox-item{
+
+    width: 30%;
+    border: 3px soild black;
+    margin: 10px;
+    background-color :cadetblue;
+}
+
+.flexbox-container-1{
+
+    min-height: 100px;
+    background-color: chartreuse;
+  
+
+}
+
+.flexbox-container-2{
+
+    min-height: 100px;
+
+}
+
+.flexbox-container-3{
+
+    min-height: 100px;
+    background-color: coral;
+
+}
+
+.flexbox-container-4{
+
+    min-height: 100px;
+
+}
+
+.flexbox-container-5{
+
+    min-height: 100px;
+    background-color:darkorange;
+
+}
