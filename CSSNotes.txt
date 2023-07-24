@@ -1,0 +1,115 @@
+CSS -- Cascading style sheets are used to apply styles of HTML pages.
+
+There are 3 ways to do styling 
+
+1)INLINE -- By using the style attibute in HTML element like as below.
+
+<h1 style="color:red">WILL</h1>
+
+2)Internal -- Internal styling is applicable only to the particular web page and it is declared like as of below.
+
+<html>
+<head>
+<title>WILL ON WHELLS</title>
+<style> // This is how styling applied to multiple h1 tags by declaring as of below , 
+h1{
+    color: red
+}
+body{
+    background-color:green
+}
+</style>
+</head>
+
+NOTE:-
+====
+
+INLINE styling overrides the Internal styling
+
+for example like below.
+<html>
+<head>
+<title>WILL ON WHELLS</title>
+<style> // This is how styling applied to multiple h1 tags by declaring as of below
+h1{
+    color: red
+}
+</style>
+</head>
+<body>
+
+<h1>WILLONWHEELS</h1> // for this tag color red will be applied
+<h1 style="color:Orange">WILLONWHEELS</h1> // for this text color orange is  applicable as Inline overrides the Internal styling.
+
+3)External:
+
+          In External styling a separate file with  .css format will be created  and our requirements are  specified as of below
+,specifically External stylesheeting helps in apply the same style for any number of web pages.
+
+body{
+    background-color:orange;   // once .css file was created and all requirements were specified we must establish a connectivity between
+                                     .css and HTML and that can be done in below format
+}
+
+
+below as one sample HTML format
+<html>
+<head>
+<title>WILLONWHEELS</title>
+<link rel = "stylesheet" href=".css"/>
+</head>
+
+NOTE:-
+     Inline stylesheets overrides Internal stylesheets
+     Internal stylesheets overrides External stylesheets
+
+=========================================---ID concept------==============================================================
+ there are multiple elements with same styling and if we want to differentiate them we have to create an id to that specific tag element
+ then use that id for styling like as below.
+
+ <html>
+ <head>
+ <title>WILLONWHEELS</title>
+ <style>
+ h1{
+    color:blue
+ }
+ #text1{                      // here we referencing the tag with an id,best practice is to use unique id for any element.
+    color:brown
+ }
+ </style>
+ </head>
+ </html>
+ <body>
+ <h1>some text</h1>
+ <h1 id="text1">some text 2</h1>
+</body>
+ =======================================----Class------=============================================================================
+
+
+ <head>
+ <title>WILLONWHEELS</title>
+ <style>
+ h1{
+    color:blue
+ }
+ #text1{                     
+    color:brown
+ }
+ h1.cls{                    //we have to  call out class with its name as stated here
+    
+ }
+ </style>
+ </head>
+ </html>
+ <body>
+ <h1>some text</h1>
+ <h1 class="cls">some text</h1>
+ <h1 class="cls">some text</h1>
+ <h1 class="cls">some text</h1>
+ <h1>some text</h1>
+ <h1>some text</h1>
+ <h1>some text</h1>
+ <h1>some text</h1>
+ <h1 id="text1">some text 2</h1>
+</body>
