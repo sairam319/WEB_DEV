@@ -17,8 +17,11 @@ function startGame(){
 function renderGame(){
 
     sumEl.textContent = "Sum :" + sum;
-    cardsEl.textContent ="Cards : " +cards[0]+ " " +cards[1];
+    cardsEl.textContent ="Cards : " ;
+    for(let a=0;a<cards.length;a++){
 
+        cardsEl.textContent += cards[a]+ " "
+    }
     if(sum<=20){
 
         message="Do you want to draw new card ??";
@@ -45,7 +48,7 @@ function newCard(){
     let card = 6;
     sum +=card;
     cards.push(card);
-    console.log(cards);
+    console.log(cards)
     renderGame();
     console.log("drawing a new card");
 }
