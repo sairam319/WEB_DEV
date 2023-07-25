@@ -1,20 +1,20 @@
 let player1Time = 102;
 let player2Time = 107;
 
-// function getFastestRaceTime(){
+function getFastestRaceTime(){
        
-//     if(player1Time<player2Time){
+    if(player1Time<player2Time){
 
-//         return player1Time
-//     }else if(player1Time > player2Time){
+        return player1Time
+    }else if(player1Time > player2Time){
 
-//         return player2Time;
-//     }else{
+        return player2Time;
+    }else{
 
-//         return player1Time;
-//     }
+        return player1Time;
+    }
 
-// }
+}
 
 
 function totalRaceTime(){
