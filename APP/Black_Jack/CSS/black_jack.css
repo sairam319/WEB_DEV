@@ -36,3 +36,11 @@ button{
     margin-top: 4px;
     margin-bottom: 4px;
 }
+
+#player-el {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(12px);
+  }
