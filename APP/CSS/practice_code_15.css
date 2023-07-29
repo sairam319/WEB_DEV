@@ -1,0 +1,20 @@
+#apple-shelf {
+    background-color: #FF0000;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+
+  #orange-shelf {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #FF5349;
+  }
+
+  body{
+
+    text-align: center;
+    display: block;
+    border: black;
+    
+  }
