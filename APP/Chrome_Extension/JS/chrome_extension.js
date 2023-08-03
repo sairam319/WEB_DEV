@@ -1,4 +1,4 @@
-let myLeads = ["www.tiktok.com","www.ert.com","www.fgth.com"]
+let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputbtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -9,9 +9,12 @@ inputbtn.addEventListener("click" ,function() {
     
     myLeads.push(inputEl.value)
     console.log(myLeads)
+    renderLeads();
 })
 
-let listItems = "";
+function renderLeads(){
+
+    let listItems = "";
 for(let a = 0; a<myLeads.length ; a++){
      
 
@@ -20,3 +23,5 @@ for(let a = 0; a<myLeads.length ; a++){
 }
 
 ulEl.innerHTML = listItems;
+
+}
