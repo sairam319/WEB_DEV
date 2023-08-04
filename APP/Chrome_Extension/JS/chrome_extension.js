@@ -8,6 +8,7 @@ inputbtn.addEventListener("click" ,function() {
      
     
     myLeads.push(inputEl.value)
+    inputEl.value = ""
     renderLeads();
 })
 
@@ -17,10 +18,11 @@ function renderLeads(){
 for(let a = 0; a<myLeads.length ; a++){
      
 
-    listItems +="<li>"+myLeads[a] +"</li>"
+    listItems +="<li><a href='#' target='_blank'>"+myLeads[a] +"</a></li>"
     // console.log(myLeads[a])
 }
 
 ulEl.innerHTML = listItems;
 
 }
+
